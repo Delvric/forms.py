@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "recipebox"
+version = "0.1.0"
+description = ""
+authors = ["Delvric <mr.tezeno@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.0.6"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+autopep8 = "^1.5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
