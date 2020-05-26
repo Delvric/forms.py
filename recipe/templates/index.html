@@ -11,14 +11,9 @@
     <h1>Hello, World!</h1>
 
     <ul>
-        {% for recipe in recipes %}
+        {%for recipe in recipes%}
         <li>
-            {{recipe.title}} | by {{recipe.body.name}}
-            <u>
-        <li>
-            {{recipe.body}}
-        </li>
-        </u>
+            <a href="{%url 'recipes' recipe.id%}">{{recipe.title}}</a>
         </li>
         {% endfor %}
     </ul>
